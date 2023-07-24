@@ -1,45 +1,55 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
+import { jsx, Box, Text, Container } from 'theme-ui';
+import Logo from 'components/logo';
+import { Link } from 'components/link';
 import FooterWidget from 'components/footer/widget';
+import { menuItems, footerNav } from './footer.data';
 import { rgba } from 'polished';
-import { jsx, Box, Container } from 'theme-ui';
-import { menuItems } from './footer.data';
+
+const changeUrl =(url)=>{
+  window.location.href=url;
+}
 
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
-      <Container>
+      {/* <Container>
+
         <Box sx={styles.footerTopInner}>
           {menuItems.map(({ id, title, items }) => (
             <FooterWidget key={id} title={title} items={items} />
           ))}
         </Box>
-      </Container>
-      {/* <Container>
+      </Container> */}
+      <Container>
         <Box sx={styles.footerInner}>
           <Box sx={styles.copyright}>
-            <Logo sx={styles.logo} />
+            {/* <Logo sx={styles.logo} /> */}
             <Text as="span">
-              Copyright by {new Date().getFullYear()} RedQ, Inc
+              Copyright by {new Date().getFullYear()} B&IYA
             </Text>
           </Box>
 
           <Box as="ul" sx={styles.footerNav}>
             {footerNav.map(({ path, label }, i) => (
-              <li key={i}>
+              <li key={i} onClick={()=>{changeUrl(path) }}>
+               
                 <Link path={path} key={i} label={label} variant="footer" />
+               
               </li>
+             
             ))}
           </Box>
         </Box>
-      </Container> */}
+      </Container>
     </footer>
   );
 }
 
 const styles = {
   footer: {
-    backgroundColor: '#F9FAFC',
+    backgroundColor: '#000000',
     pt: 6,
   },
   footerTopInner: {
@@ -68,7 +78,7 @@ const styles = {
     span: {
       fontSize: '14px',
       lineHeight: 1.29,
-      color: rgba('#0F2137', 0.6),
+      color: rgba('#FFFFFF', 0.6),
       mt: ['18px', '18px', '7px'],
     },
   },
@@ -89,9 +99,12 @@ const styles = {
       },
     },
     a: {
-      color: 'textSecondary',
+      color: '#FFFFFF',
       fontSize: [1, null, null, 2],
       textDecoration: 'none',
     },
+    // a:hover {
+    //   color: "ff10f0"
+    // }
   },
 };

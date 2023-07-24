@@ -16,7 +16,6 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-
         {/* <SEO title="Agency Digital" description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!" /> */}
       <SEO
           title="Marketplace of patent licencing"
@@ -25,7 +24,7 @@ export default function IndexPage() {
         <Banner />
         <UltimateFeatures />
         <CustomerSupport />
-        {/* <PricingModel/> */}
+        <PricingModel/>
         {/* <Pricing /> */}
         {/* <UserPricing /> */}
         <Support />

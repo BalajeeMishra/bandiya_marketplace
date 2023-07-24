@@ -10,8 +10,8 @@ import patent from "assets/images/patent.jpg"
 const list = [
   "The patent's claims",
   'The prior art',
-  'The market for invention',
-  'The value of the patent',
+  'Market for invention',
+  'value of patent',
 ];
 
 const CustomerSupport = () => {
@@ -32,7 +32,7 @@ const CustomerSupport = () => {
 
             <Grid sx={styles.list} as="ul" style={{"margin-left":"30px"}}>
               {list.map((item, i) => (
-                <Text as="li" key={i} style={{"display":"inline","text-wrap":"nowrap",}}>
+                <Text as="li" key={i} style={{"text-wrap":"nowrap",}}>
                   <IoIosCheckmarkCircle
                     sx={{ color: 'primary', mr: 2 }}
                     size="20px"

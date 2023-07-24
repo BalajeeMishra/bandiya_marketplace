@@ -129,23 +129,19 @@ export const menuItems = [
 
 export const footerNav = [
   {
-    path: '#!',
-    label: 'Home',
+    path: 'https://www.linkedin.com/company/bandiya/',
+    label: 'LinkedIn',
+  },
+  {
+    path: 'https://twitter.com/Bandiya833999',
+    label: 'Twitter',
+  },
+  {
+    path: 'mailto:team@bandiya.com',
+    label: 'Mail',
   },
   {
     path: '#!',
-    label: 'Advertise',
-  },
-  {
-    path: '#!',
-    label: 'Supports',
-  },
-  {
-    path: '#!',
-    label: 'Marketing',
-  },
-  {
-    path: '#!',
-    label: 'FAQ',
+    label: 'Instagram',
   },
 ];

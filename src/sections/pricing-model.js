@@ -1,10 +1,10 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui';
+import { jsx, Box, Container, Grid, Heading, Text,Button } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
 import support from 'assets/images/support.png';
-
+import PricingImage from "assets/images/pricing-image.png";
 const list = [
 //   "The patent's claims",
 //   'The prior art',
@@ -12,35 +12,35 @@ const list = [
 //   'The value of the patent',
 ];
 
+const changeUrl =(url)=>{
+  window.location.href=url; 
+}
 const PricingModel = () => {
   return (
-    <Box as="section" sx={styles.section}>
+    <Box as="section" sx={styles.section} id="pricing">
       <Container>
         <Box sx={styles.grid}>
           
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-            Patent licensing is not rocket science, but it's close.
+            Our pricing plans are tailored to your needs.
             </Heading>
             <Text as="p" sx={styles.summary}>
-            Patent licensing can be a complex process for individuals, but it doesn't have to be. A PVR is a detailed analysis about the patent which helps to figure out its market potential and value estimation. A PVR typically includes the following information:
+            Our pricing plans are designed to be flexible and scalable, so you can only pay for the resources you use. Contact us today to learn more about our pricing plans and how we can help you grow your business.
             </Text>
 
             <Grid sx={styles.list} as="ul">
-              {list.map((item, i) => (
-                <Text as="li" key={i}>
-                  <IoIosCheckmarkCircle
-                    sx={{ color: 'primary', mr: 2 }}
-                    size="20px"
-                  />
-                  {item}
-                </Text>
-              ))}
+            <Button variant="primary" sx={styles.donateNow} onClick={()=>{changeUrl("https://8veayideejz.typeform.com/to/SVJAbj05")}} >
+            Patent Licensing
+            </Button>     
+        <Button variant="primary" sx={styles.donateNow} onClick={()=>{changeUrl("https://8veayideejz.typeform.com/to/TFbMk4Pz")}}>
+        Patent Filing
+        </Button>   
             </Grid>
           </Box>
           
           <Box sx={styles.illustration}>
-            <Image src={support} loading="lazy" alt="support" />
+            <Image src={PricingImage} loading="lazy" alt="support" />
           </Box>
 
         </Box>
@@ -115,4 +115,9 @@ const styles = {
       lineHeight: [2.81, null, null, null, 2.2, 2.81],
     },
   },
+  // donateNow: {
+  //   fontSize: 1,
+  //   minHeight: 45,
+  //   margin: 'auto 30px 40px',
+  // },
 };

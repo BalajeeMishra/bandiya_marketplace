@@ -10,9 +10,9 @@ const ActionButton = ({ isOpen, handleClick }) => {
   return (
     <span sx={styles.button} onClick={handleClick}>
       {isOpen ? (
-        <BiMinus size="28px" color={rgba('#0F2137', 0.3)} sx={styles.button} />
+        <BiMinus size="28px" color={rgba('#ff10f0', 0.3)} sx={styles.button} />
       ) : (
-        <BiPlus size="28px" color={rgba('#0F2137', 0.3)} sx={styles.button} />
+        <BiPlus size="28px" color={rgba('#ff10f0', 0.3)} sx={styles.button} />
       )}
     </span>
   );

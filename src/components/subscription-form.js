@@ -9,7 +9,7 @@ const SubscriptionForm = ({ buttonLabel, ...props }) => {
         Email
       </Label>
       <Input type="email" id="email" placeholder="Enter Email address" />
-      <Button  backgroundColor={"#BC13FE"}>{buttonLabel ?? 'Get Started'}</Button>
+      <Button  backgroundColor={"#BC13FE"}>{buttonLabel ?? 'Subscribe'}</Button>
     </Flex>
   );
 };

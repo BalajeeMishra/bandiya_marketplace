@@ -31,7 +31,7 @@ const Support = () => {
           <div sx={styles.content}>
             <div sx={styles.heading}>
               <Heading sx={styles.title}>
-                Do you need help? Our support team ready to help you
+                Do you need help? Our support team is ready to help you!
               </Heading>
               <Text as="p" sx={styles.summary}>
               Our customer support team is available 24/7 to answer your questions and help you with any problems you may have..
@@ -59,7 +59,7 @@ export default Support;
 
 const styles = {
   section: {
-    pt: [8, null, null, null, 10, 17],
+    // pt: [8, null, null, null, 10, 17],
     pb: [8, null, null, null, 10, 16],
   },
 
