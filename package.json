@@ -2,13 +2,10 @@
   "name": "@landing/020-next",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start":"next start",
-    "serve": "next start",
-    "export": "next export"
-  },
+ "scripts": {
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && next start",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && next build"
+    },
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "framer-motion": "^4.1.3",
