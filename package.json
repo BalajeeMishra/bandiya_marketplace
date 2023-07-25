@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
  "scripts": {
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && next start",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && next build"
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && next start",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && next build"
     },
   "dependencies": {
     "@emotion/core": "^11.0.0",
