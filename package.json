@@ -2,12 +2,10 @@
   "name": "@landing/020-next",
   "version": "0.0.1",
   "private": true,
-  "engines": {
-    "node": "16.x"
-  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "serve": "next start",
     "export": "next export"
   },
