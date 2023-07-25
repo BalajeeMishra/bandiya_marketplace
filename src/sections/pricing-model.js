@@ -4,7 +4,7 @@ import { jsx, Box, Container, Grid, Heading, Text,Button } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
 import support from 'assets/images/support.png';
-import PricingImage from "assets/images/pricing-image.png";
+import PricingImage from "assets/images/Pricing-image.png";
 const list = [
 //   "The patent's claims",
 //   'The prior art',
